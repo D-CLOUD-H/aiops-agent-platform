@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables (含敏感信息)
+.env
+.env.local
+.env.*.local
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 工具缓存
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+
+# 日志
+logs/
+*.log
+*.pid
+*.seed
+
+# 数据库 / 运行时数据
+data/aiops.db
+data/chromadb/
+data/badcases/
+data/.legacy_nested_data/
+*.sqlite3
+*.db
+
+# 测试覆盖率
+.coverage
+coverage.xml
+
+# 类型检查
+.mypy_cache/
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+
+# === AIOps 项目补充：运行时数据 / 生成产物（保留在本地，不入库） ===
+# 注意：以下路径均用前导斜杠锚定到仓库根目录，
+# 避免误伤源码目录 backend/app/data/
+/data/
+/backend/data/
+/backend/backend/
+/frontend/dist/
+/frontend/outputs/
+/scripts/demo_30s*
+*.tar.gz
+
+# 内部开发过程文档（如仍在本地，不入库）
+/docs/superpowers/
+/archive/
